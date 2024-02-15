@@ -279,7 +279,7 @@ table {
 }
 @media screen and (max-width: 762px) {
   .styled-table {
-    width: 450px;
+    max-width: 450px;
   }
   .commands-section {
     flex-direction: column;
@@ -287,5 +287,10 @@ table {
     margin: 0;
     margin-right: 5px;
     gap: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .styled-table {
+    max-width: 300px;
   }
 }
