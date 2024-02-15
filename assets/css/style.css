@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  box-sizing: border-box;
+}
 
 .blurple {
   color: #f3ba2f;
