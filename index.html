@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PlayGames - Discord Games Bot</title>
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <!-- Back To Top Start -->
+    <a id="backtotop" data-tippy-content="Back To Top.">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+    <!-- Back To Top End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand mt-2 mb-2">
+        <a class="navbar-item" href="#">
+          <img src="./assets/img/PlayGames.png" alt="logo" />
+          <strong>&nbsp;PlayGames</strong>
+
+          <!-- or if you want to use image -->
+          <!-- <img
+            src="image link or path"
+            width="112"
+            height="28"
+          /> -->
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger has-text-white"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#home" class="navbar-item is-tab"> Home </a>
+
+          <a href="#features" class="navbar-item is-tab"> Features </a>
+
+          <a href="#commands" class="navbar-item is-tab"> Commands </a>
+
+          <a href="#stats" class="navbar-item is-tab"> Stats </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="hero bg-base is-fullheight">
+      <div class="hero-body">
+        <div class="">
+          <div class="columns">
+            <div class="column mr-6 mt-12" data-aos="fade-up">
+              <p class="title has-text-white has-text-weight-bold">
+                Your Gateway to Endless Fun in Discord.
+              </p>
+              <p class="subtitle has-text-grey-light is-size-6 mt-3">
+                Elevate your server experience with an wide array of fun &
+                engaging games like Wordchain, TicTacToe, ConnectFour, Chess,
+                Hangman & many more!
+              </p>
+              <div class="buttons">
+                <a href="#" class="button is-blurple is-medium">
+                  <strong>Add Bot</strong>
+                </a>
+                <a href="#" class="button is-blurple is-medium">
+                  <strong>Join Server</strong>
+                </a>
+              </div>
+            </div>
+            <div class="column mt-6" data-aos="fade-left">
+              <img
+                class="image has-image-centered vert-move mt-4"
+                src="assets/img/relaunch_day.svg"
+                alt="hero image"
+                style="width: 20rem"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered" data-tippy-content="Scroll Down">
+        <a href="#features"
+          ><i
+            class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"
+          ></i
+        ></a>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Hero Waves Start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#1a2634"
+        fill-opacity="1"
+        d="M0,288L24,261.3C48,235,96,181,144,154.7C192,128,240,128,288,149.3C336,171,384,213,432,202.7C480,192,528,128,576,133.3C624,139,672,213,720,213.3C768,213,816,139,864,101.3C912,64,960,64,1008,106.7C1056,149,1104,235,1152,240C1200,245,1248,171,1296,144C1344,117,1392,139,1416,149.3L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Hero Waves End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Features</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+        <div class="columns mt-6">
+          <div class="column mr-6" data-aos="fade-right">
+            <h4 class="title">
+              <span class="blurple">
+                <i class="fa-solid fa-chart-simple"></i
+              ></span>
+              Easy To Use
+            </h4>
+            <p class="subtitle mt-3">
+              Designed for simplicity, our product boasts an intuitive interface
+              for effortless navigation, catering to users of all levels.
+              Streamlined processes ensure a seamless experience.
+            </p>
+          </div>
+          <div class="column mr-6" data-aos="fade-left">
+            <h4 class="title">
+              <span class="blurple">
+                <i class="fa-solid fa-slash-forward"></i> </span
+              >Slash Command Based
+            </h4>
+            <p class="subtitle mt-3">
+              Completely Slash Command Based, enabling swift actions and
+              navigation. Efficiently execute commands within your interface for
+              seamless user interaction and enhanced fun.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            <h4 class="title">
+              <span class="blurple"
+                ><i class="fa-solid fa-signal-bars"></i
+              ></span>
+              24*7 Service
+            </h4>
+            <p class="subtitle mt-3">
+              Access our bot anytime, anywhere with 24/7 online availability.
+              Round-the-clock support ensures uninterrupted assistance and
+              convenience for users globally, fostering trust and reliability.
+            </p>
+          </div>
+          <div class="column mr-6">
+            <h4 class="title">
+              <span class="blurple"><i class="fa-solid fa-flask"></i></span>
+              Good UI/UX
+            </h4>
+            <p class="subtitle mt-3">
+              Our bot prioritizes user experience with a sleek UI, intuitive
+              navigation, and responsive design. Enjoy seamless interactions and
+              easy accessibility, enhancing fun and satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Commands Section Start -->
+    <section id="commands" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Commands</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+      <div class="commands-section">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Command</th>
+
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="command">avatar</td>
+
+              <td class="usage">/avatar &#91;@user&#93;</td>
+            </tr>
+            <tr>
+              <td class="command">botinfo</td>
+
+              <td class="usage">/botinfo</td>
+            </tr>
+            <tr>
+              <td class="command">color</td>
+
+              <td class="usage">/color &lt;HEX code&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">define</td>
+
+              <td class="usage">/define &lt;word&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">math</td>
+
+              <td class="usage">/math &lt;input&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">ping</td>
+
+              <td class="usage">/ping</td>
+            </tr>
+            <tr>
+              <td class="command">roleinfo</td>
+
+              <td class="usage">/roleinfo &lt;role&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">serverinfo</td>
+
+              <td class="usage">/serverinfo</td>
+            </tr>
+            <tr>
+              <td class="command">userinfo</td>
+
+              <td class="usage">/userinfo &lt;user&gt;</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Command</th>
+
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="command">avatar</td>
+
+              <td class="usage">/avatar &#91;@user&#93;</td>
+            </tr>
+            <tr>
+              <td class="command">botinfo</td>
+
+              <td class="usage">/botinfo</td>
+            </tr>
+            <tr>
+              <td class="command">color</td>
+
+              <td class="usage">/color &lt;HEX code&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">define</td>
+
+              <td class="usage">/define &lt;word&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">math</td>
+
+              <td class="usage">/math &lt;input&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">ping</td>
+
+              <td class="usage">/ping</td>
+            </tr>
+            <tr>
+              <td class="command">roleinfo</td>
+
+              <td class="usage">/roleinfo &lt;role&gt;</td>
+            </tr>
+            <tr>
+              <td class="command">serverinfo</td>
+
+              <td class="usage">/serverinfo</td>
+            </tr>
+            <tr>
+              <td class="command">userinfo</td>
+
+              <td class="usage">/userinfo &lt;user&gt;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Commands Section End -->
+
+    <!-- Stats Section Start -->
+    <section id="stats" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Stats</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+
+      <div class="columns mt-6">
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">069</p>
+          <span class="subtitle has-text-weight-bold blurple"
+            ><i class="fa-solid fa-server"></i> Servers</span
+          >
+        </div>
+
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">030</p>
+          <span class="subtitle has-text-weight-bold blurple"
+            ><i class="fa-solid fa-terminal"></i> Commands</span
+          >
+        </div>
+
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">999</p>
+          <span class="subtitle has-text-weight-bold blurple"
+            ><i class="fa-solid fa-users"></i> Users</span
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+      <div class="">
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold">
+            Ready to try <span class="blurple">PlayGames</span>?
+          </p>
+          <p class="subtitle mt-3 has-text-gray">
+            Add PlayGames to your server now and enjoy games.
+          </p>
+          <a href="#" class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-book"></i> Get Started</strong></a
+          >
+        </div>
+
+        <div class="column"></div>
+      </div>
+    </section>
+    <!-- Invite Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+          <a href="#" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          &nbsp; &nbsp;
+          <a href="#" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <p>
+          <span class="has-text-weight-bold blurple">PlayGames</span>
+          <br />
+          &copy; <span id="cp-year"></span> Copyright Squares. All Rights
+          Reserved.
+        </p>
+
+        <p style="letter-spacing: 0.1em" class="">
+          <br />The Original Website Design is Open Source on
+          <a
+            href="https://github.com/JastinXyz/discord-bot-landing-page-web"
+            class="blurple"
+            target="_blank"
+            >Github</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

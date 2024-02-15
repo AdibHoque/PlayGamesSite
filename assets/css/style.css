@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.blurple {
+  color: #f3ba2f;
+}
+
+.bg-base {
+  background-color: #1a2634 !important;
+}
+
+#backtotop {
+  display: inline-block;
+  background-color: #f3ba2f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#backtotop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#backtotop:active {
+  background-color: #555;
+}
+
+#backtotop.show {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.navbar-item,
+.navbar-link {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.navbar-item:hover {
+  background-color: transparent !important;
+  color: #f3ba2f !important;
+}
+
+.navbar-link:hover {
+  background-color: transparent !important;
+  color: #f3ba2f !important;
+}
+
+.navbar-menu {
+  animation: navAnimOpen 0.2s ease-in-out;
+}
+
+@keyframes navAnimOpen {
+  0% {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 396px;
+  }
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+nav,
+.navbar-menu {
+  background-color: #1a2634 !important;
+}
+
+.navbar-item.nav-dark,
+.navbar-link.nav-dark {
+  color: #363636 !important;
+}
+
+.navbar-item,
+.navbar-link {
+  color: white !important;
+}
+
+nav.nav-w {
+  background: #fff !important;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.nav-w {
+  background: #fff !important;
+  box-shadow: 100px 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mb-12 {
+  margin-bottom: 6rem;
+}
+
+.mt-12 {
+  margin-top: 6rem;
+}
+
+.ml-12 {
+  margin-left: 6rem;
+}
+
+.mr-12 {
+  margin-right: 6rem;
+}
+
+.img-col-ml-13 {
+  margin-left: 13rem;
+}
+
+.img-col-mr-13 {
+  margin-right: 13rem;
+}
+
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line {
+  background: #f3ba2f;
+  width: 150px;
+  height: 5px;
+}
+
+.line2 {
+  background: #f3ba2f;
+  width: 75px;
+  height: 5px;
+}
+
+.line-center {
+  margin: 0 auto;
+}
+
+.line.blurple {
+  background: #f3ba2f;
+}
+
+.title.lined {
+  margin-bottom: 0px;
+}
+
+.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+.vert-move2 {
+  -webkit-animation: mover 0.5s infinite alternate;
+  animation: mover 0.5s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.button.is-blurple {
+  background-color: #f3ba2f;
+  border-color: transparent;
+  color: #fff;
+}
+
+.single-feature {
+  position: relative;
+  z-index: 5;
+}
+
+.shape-right {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+  opacity: 30%;
+}
+
+.shape-right img {
+  width: 100%;
+}
+
+.shape-left {
+  position: absolute;
+  top: -80px;
+  left: 90px;
+  width: 35%;
+  height: 100%;
+  z-index: -1;
+  opacity: 30%;
+}
+
+.shape-left img {
+  width: 100%;
+}
+.buttons a:hover {
+  color: #1a2634;
+}
+.styled-table {
+  margin: 30px 20px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 900px;
+  background-color: #191a1f;
+  border: 3px solid #252b35;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.styled-table th {
+  background-color: #191a1f;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #252b35;
+  padding: 15px;
+}
+.styled-table td {
+  color: #ffffff;
+  text-align: left;
+  background-color: #18191a;
+  border: 1px solid #252b35;
+  border-radius: 3px;
+  padding: 15px;
+}
+td.command {
+  color: #ffbf00;
+}
+td.usage {
+  color: #7a7a7a;
+}
+.styled-table caption {
+  color: #ffbf00;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.commands-section {
+  display: flex;
+  gap: 20px;
+  margin: 0 40px;
+}
+table {
+  border-radius: 20px;
+}
+@media screen and (max-width: 762px) {
+  .styled-table {
+    width: 450px;
+  }
+  .commands-section {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-right: 5px;
+    gap: 0;
+  }
+}
